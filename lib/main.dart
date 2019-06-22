@@ -68,7 +68,6 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                print('counter = $_counter');
                 setState(() {
                   scoreKeeper.add(
                     Icon(
@@ -79,7 +78,7 @@ class _QuizPageState extends State<QuizPage> {
                   if (_counter == questions.length - 1) {
                     _counter = 0;
                   } else {
-                    _counter +=1;
+                    _counter++;
                   }
                 });
               },
@@ -104,7 +103,7 @@ class _QuizPageState extends State<QuizPage> {
                   if (_counter == questions.length - 1) {
                     _counter = 0;
                   } else {
-                    _counter +=1;
+                    _counter++;
                   }  
                 });
               },
